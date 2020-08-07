@@ -1,2 +1,2 @@
 # naina
-projects with Naina gill
+projects with Naina Gill
