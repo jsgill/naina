@@ -6,12 +6,8 @@ export function addArticle(payload) {
   return { type: ADD_ARTICLE, payload };
 }
 
-// src/js/actions/index.js
-
-// ...
-// our new action creator. Will it work?
-
-export function getData() {
+export function getData(url) {
+  return { type: "DATA_REQUESTED", payload: { url } };
   return function (dispatch) {
     return fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
